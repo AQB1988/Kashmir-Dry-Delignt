@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SEO from '../components/SEO'
 import "./Contact.css";
 
 const Contact = () => {
@@ -24,6 +25,12 @@ const Contact = () => {
 
   return (
     <main className="contact-page">
+      <SEO 
+        title="Contact Us - Kashmir Dry Delight | Get in Touch"
+        description="Contact Kashmir Dry Delight for inquiries about premium dry fruits, bulk orders, or customer support. We're here to help you!"
+        keywords="contact kashmir dry delight, customer support, dry fruits inquiry"
+        url="/contact"
+      />
       <div className="container">
         <h1 className="page-title">Contact Us</h1>
 

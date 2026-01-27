@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SEO from '../components/SEO'
 import "./BulkOrder.css";
 
 const BulkOrder = () => {
@@ -37,6 +38,12 @@ const BulkOrder = () => {
 
   return (
     <main className="bulk-order-page">
+      <SEO 
+        title="Bulk Order - Wholesale Dry Fruits | Kashmir Dry Delight"
+        description="Place bulk orders for premium dry fruits at wholesale prices. Competitive pricing, custom packaging, and flexible payment terms. Get a quote today!"
+        keywords="bulk order dry fruits, wholesale nuts, bulk dry fruits, wholesale pricing, bulk order kashmir"
+        url="/bulk-order"
+      />
       <div className="container">
         <h1 className="page-title">Bulk Order</h1>
 

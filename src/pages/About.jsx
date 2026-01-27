@@ -1,8 +1,15 @@
+import SEO from '../components/SEO'
 import './About.css'
 
 const About = () => {
   return (
     <main className="about-page">
+      <SEO 
+        title="About Us - Kashmir Dry Delight | Premium Dry Fruits"
+        description="Learn about Kashmir Dry Delight - your trusted source for premium quality dry fruits from Kashmir. We bring you the finest selection with 100% quality guarantee."
+        keywords="about kashmir dry delight, premium dry fruits kashmir, quality dry fruits, kashmir nuts"
+        url="/about"
+      />
       <div className="container">
         <h1 className="page-title">About Kashmir Dry Delight</h1>
         

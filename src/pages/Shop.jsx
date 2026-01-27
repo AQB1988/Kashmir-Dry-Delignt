@@ -1,5 +1,5 @@
 import { useSearchParams, Link } from 'react-router-dom'
-import { useState } from 'react'
+import SEO from '../components/SEO'
 import './Shop.css'
 
 const Shop = () => {
@@ -21,16 +21,24 @@ const Shop = () => {
     { id: 12, name: 'Pumpkin Seeds', price: '₹349', category: 'seeds', image: '/assets/images/products/product-pumpkin-seeds.jpg' },
     { id: 13, name: 'Festival Gift Box', price: '₹1,299', category: 'gift-boxes', image: '/assets/images/gift-boxes/gift-box-festival.jpg' },
     { id: 14, name: 'Premium Gift Hamper', price: '₹1,599', category: 'gift-boxes', image: '/assets/images/gift-boxes/gift-box-premium.jpg' },
+    { id: 15, name: 'Deluxe Gift Collection', price: '₹1,999', category: 'gift-boxes', image: '/assets/images/gift-boxes/gift-box-deluxe.jpg' },
+    { id: 16, name: 'Luxury Gift Box', price: '₹2,499', category: 'gift-boxes', image: '/assets/images/gift-boxes/gift-box-luxury.jpg' },
+    { id: 17, name: 'Royal Gift Hamper', price: '₹2,999', category: 'gift-boxes', image: '/assets/images/gift-boxes/gift-box-royal.jpg' },
+    { id: 18, name: 'Exclusive Gift Box', price: '₹3,499', category: 'gift-boxes', image: '/assets/images/gift-boxes/gift-box-exclusive.jpg' },
   ]
 
   const filteredProducts = category === 'all' 
     ? allProducts 
     : allProducts.filter(p => p.category === category)
 
-  const [selectedProduct, setSelectedProduct] = useState(null)
-
   return (
     <main className="shop-page">
+      <SEO 
+        title="Shop Premium Dry Fruits - Kashmir Dry Delight"
+        description="Browse our wide collection of premium dry fruits, nuts, dates, berries, and gift boxes. Best quality guaranteed with fast delivery across India."
+        keywords="buy dry fruits online, premium nuts, almonds, cashews, dates, berries, gift boxes, kashmir dry fruits"
+        url="/shop"
+      />
       <div className="container">
         <h1 className="page-title">Our Products</h1>
         
@@ -62,12 +70,12 @@ const Shop = () => {
               <div className="product-info">
                 <h3>{product.name}</h3>
                 <p className="product-price">{product.price}</p>
-                <button 
+                <Link 
+                  to={`/product/${product.id}`}
                   className="btn btn-primary"
-                  onClick={() => setSelectedProduct(product)}
                 >
-                  Add to Cart
-                </button>
+                  View Details
+                </Link>
               </div>
             </div>
           ))}

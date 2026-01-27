@@ -3,12 +3,12 @@ import './GiftBoxes.css'
 
 const GiftBoxes = () => {
   const giftBoxes = [
-    { id: 1, name: 'Festival Gift Box', price: '₹1,299', image: '/assets/images/gift-boxes/gift-box-festival.jpg' },
-    { id: 2, name: 'Premium Gift Hamper', price: '₹1,599', image: '/assets/images/gift-boxes/gift-box-premium.jpg' },
-    { id: 3, name: 'Deluxe Gift Collection', price: '₹1,999', image: '/assets/images/gift-boxes/gift-box-deluxe.jpg' },
-    { id: 4, name: 'Luxury Gift Box', price: '₹2,499', image: '/assets/images/gift-boxes/gift-box-luxury.jpg' },
-    { id: 5, name: 'Royal Gift Hamper', price: '₹2,999', image: '/assets/images/gift-boxes/gift-box-royal.jpg' },
-    { id: 6, name: 'Exclusive Gift Box', price: '₹3,499', image: '/assets/images/gift-boxes/gift-box-exclusive.jpg' },
+    { id: 13, name: 'Festival Gift Box', price: '₹1,299', image: '/assets/images/gift-boxes/gift-box-festival.jpg' },
+    { id: 14, name: 'Premium Gift Hamper', price: '₹1,599', image: '/assets/images/gift-boxes/gift-box-premium.jpg' },
+    { id: 15, name: 'Deluxe Gift Collection', price: '₹1,999', image: '/assets/images/gift-boxes/gift-box-deluxe.jpg' },
+    { id: 16, name: 'Luxury Gift Box', price: '₹2,499', image: '/assets/images/gift-boxes/gift-box-luxury.jpg' },
+    { id: 17, name: 'Royal Gift Hamper', price: '₹2,999', image: '/assets/images/gift-boxes/gift-box-royal.jpg' },
+    { id: 18, name: 'Exclusive Gift Box', price: '₹3,499', image: '/assets/images/gift-boxes/gift-box-exclusive.jpg' },
   ]
 
   return (
@@ -37,7 +37,7 @@ const GiftBoxes = () => {
               <div className="gift-box-info">
                 <h3>{box.name}</h3>
                 <p className="gift-box-price">{box.price}</p>
-                <Link to="/shop" className="btn btn-primary">View More</Link>
+                <Link to={`/product/${box.id}`} className="btn btn-primary">View Details</Link>
               </div>
             </div>
           ))}

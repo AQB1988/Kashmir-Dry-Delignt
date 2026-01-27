@@ -33,7 +33,7 @@ const FeaturedProducts = () => {
               </div>
               <div className="product-info">
                 <h3>{product.name}</h3>
-                <Link to="/shop" className="btn-link">View more</Link>
+                <Link to={`/product/${product.id}`} className="btn-link">View more</Link>
               </div>
             </div>
           ))}
