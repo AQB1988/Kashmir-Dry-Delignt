@@ -3,12 +3,12 @@ import './GiftBoxes.css'
 
 const GiftBoxes = () => {
   const giftBoxes = [
-    { id: 13, name: 'Festival Gift Box', price: '₹1,299', image: '/assets/images/gift-boxes/gift-box-festival.jpg' },
-    { id: 14, name: 'Premium Gift Hamper', price: '₹1,599', image: '/assets/images/gift-boxes/gift-box-premium.jpg' },
-    { id: 15, name: 'Deluxe Gift Collection', price: '₹1,999', image: '/assets/images/gift-boxes/gift-box-deluxe.jpg' },
-    { id: 16, name: 'Luxury Gift Box', price: '₹2,499', image: '/assets/images/gift-boxes/gift-box-luxury.jpg' },
-    { id: 17, name: 'Royal Gift Hamper', price: '₹2,999', image: '/assets/images/gift-boxes/gift-box-royal.jpg' },
-    { id: 18, name: 'Exclusive Gift Box', price: '₹3,499', image: '/assets/images/gift-boxes/gift-box-exclusive.jpg' },
+    { id: 13, name: 'Festival Gift Box', price: '₹1,299', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
+    { id: 14, name: 'Premium Gift Hamper', price: '₹1,599', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
+    { id: 15, name: 'Deluxe Gift Collection', price: '₹1,999', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
+    { id: 16, name: 'Luxury Gift Box', price: '₹2,499', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
+    { id: 17, name: 'Royal Gift Hamper', price: '₹2,999', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
+    { id: 18, name: 'Exclusive Gift Box', price: '₹3,499', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
   ]
 
   return (

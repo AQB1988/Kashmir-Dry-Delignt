@@ -3,12 +3,12 @@ import './SignatureGiftBoxes.css'
 
 const SignatureGiftBoxes = () => {
   const giftBoxes = [
-    { id: 15, name: 'Gift Box Collection', price: '₹1,999', image: '/assets/images/gift-boxes/gift-box-deluxe.jpg' },
-    { id: 16, name: 'Gift Box Collection', price: '₹2,499', image: '/assets/images/gift-boxes/gift-box-luxury.jpg' },
-    { id: 17, name: 'Gift Box Collection', price: '₹2,999', image: '/assets/images/gift-boxes/gift-box-royal.jpg' },
-    { id: 18, name: 'Gift Box Collection', price: '₹3,499', image: '/assets/images/gift-boxes/gift-box-exclusive.jpg' },
-    { id: 19, name: 'Gift Box Collection', price: '₹3,999', image: '/assets/images/gift-boxes/gift-box-signature-5.jpg' },
-    { id: 20, name: 'Gift Box Collection', price: '₹4,499', image: '/assets/images/gift-boxes/gift-box-signature-6.jpg' },
+    { id: 15, name: 'Gift Box Collection', price: '₹1,999', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
+    { id: 16, name: 'Gift Box Collection', price: '₹2,499', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
+    { id: 17, name: 'Gift Box Collection', price: '₹2,999', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
+    { id: 18, name: 'Gift Box Collection', price: '₹3,499', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
+    { id: 19, name: 'Gift Box Collection', price: '₹3,999', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
+    { id: 20, name: 'Gift Box Collection', price: '₹4,499', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
   ]
 
   return (
